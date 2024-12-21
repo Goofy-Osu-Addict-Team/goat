@@ -14,6 +14,8 @@ export default {
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                icon: ['Luckiest Guy', ...defaultTheme.fontFamily.sans],
+                nunito: ['Nunito', ...defaultTheme.fontFamily.sans],
             },
         },
     },
