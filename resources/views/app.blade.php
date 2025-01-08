@@ -3,8 +3,26 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="GOAT, Goofy Osu Addict Team">
 
-        <title inertia>{{ config('app.name', 'GOAT') }}</title>
+        <!-- Primary Meta Tags -->
+        <title inertia>{{ config('app.name', 'Goofy Osu Addict Team') }}</title>
+        <meta name="title" content="Goofy Osu Addict Team" />
+        <meta name="description" content="Know more about our GOAT clan from osu. Join us today." />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://goat.applism.ca" />
+        <meta property="og:title" content="Goofy Osu Addict Team" />
+        <meta property="og:description" content="Join us today to know more about our GOAT clan from osu." />
+        <meta property="og:image" content="https://i.ibb.co.com/1d6H2Ts/GOAT.jpg" />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://goat.applism.ca" />
+        <meta property="twitter:title" content="Goofy Osu Addict Team" />
+        <meta property="twitter:description" content="Join us today to know more about our GOAT clan from osu." />
+        <meta property="twitter:image" content="https://i.ibb.co.com/1d6H2Ts/GOAT.jpg" />
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
