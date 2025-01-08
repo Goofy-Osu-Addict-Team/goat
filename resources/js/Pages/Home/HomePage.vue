@@ -2,6 +2,15 @@
 import { Head } from '@inertiajs/vue3';
 import PageLayout from '@/Layouts/PageLayout.vue';
 import HomeBox from '@/Components/HomeBox.vue';
+import { provide } from 'vue';
+
+const props = defineProps({
+    user: {
+        type: Object,
+    },
+});
+
+provide('user', props.user);
 </script>
 
 <template>
@@ -43,7 +52,7 @@ import HomeBox from '@/Components/HomeBox.vue';
                 </div>
             </div>
         </div>
-        <div class="bg-gray-200 rounded-xl dark:bg-slate-800">
+        <div class="bg-gray-200 border-t-2 rounded-xl border-slate-700 dark:bg-slate-800">
             <div class="flex flex-col justify-center xl:mx-auto gap-8 lg:gap-16 2xl:max-w-[60%]">
                 <HomeBox title="The place to talk with cool people" image="https://i.ibb.co.com/7rZxtWH/image-2025-01-07-202255283.png" :border="false">
                     In our server, you'll be able to talk basically whatever you want! While our server may be small with less than 1000 members, I am proud to say we are quite the active community. You won't feel being left out in our server 😎

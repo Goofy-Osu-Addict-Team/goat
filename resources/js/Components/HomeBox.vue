@@ -27,7 +27,7 @@ const props = defineProps({
             </div>
         </div>
         <div v-if="image" class="text-right lg:w-1/2">
-            <img :src="image" class="inline xl:max-h-[500px]">
+            <img :src="image" class="inline xl:max-h-[500px] rounded-md dark:border-gray-700 border-2">
         </div>
     </div>
 </template>

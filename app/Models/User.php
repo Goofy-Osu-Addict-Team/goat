@@ -18,10 +18,23 @@ class User extends Authenticatable
      * @var list<string>
      */
     protected $fillable = [
-        'name',
+        'id',
+        'username',
+        'discriminator',
         'email',
-        'password',
+        'avatar',
+        'verified',
+        'locale',
+        'mfa_enabled',
+        'refresh_token',
     ];
+
+     /**
+     * Indicates if the model's ID is auto-incrementing.
+     * 
+     * @var boolean
+     */
+    public $incrementing = false;
 
     /**
      * The attributes that should be hidden for serialization.
@@ -29,7 +42,7 @@ class User extends Authenticatable
      * @var list<string>
      */
     protected $hidden = [
-        'password',
+        'refresh_token',
         'remember_token',
     ];
 
@@ -41,8 +54,7 @@ class User extends Authenticatable
     protected function casts(): array
     {
         return [
-            'email_verified_at' => 'datetime',
-            'password' => 'hashed',
+            'id' => 'string',
         ];
     }
 }
