@@ -14,7 +14,7 @@ const togglePopup = () => popup.value = !popup.value;
 
 <template>
     <div @click="togglePopup" v-if="popup" class="fixed z-30 w-full min-h-screen" />
-    <div class="fixed top-0 z-50 flex h-[60px] shadow-md items-center w-full dark:text-white dark:bg-gray-950 rounded-b-xl">
+    <div class="fixed top-0 z-50 flex h-[60px] shadow-md items-center w-full dark:text-white dark:bg-gray-950">
         <div class="w-full h-full mx-auto text-md max-w-[90%] lg:max-w-[85%] 2xl:max-w-[55%] flex flex-row-reverse">
             <button @click="togglePopup" v-if="user" class="grid grid-cols-2 gap-1 px-2 cursor-pointer hover:dark:bg-gray-800 place-items-center">
                 <img class="w-[36px] rounded-full aspect-square" :src="`https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.webp`" :alt="`${user.username}'s profile picture`">
