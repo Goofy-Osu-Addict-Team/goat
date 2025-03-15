@@ -52,7 +52,7 @@ provide('user', props.user);
                 </div>
             </div>
         </div>
-        <div class="bg-gray-200 border-y-2 rounded-t-xl border-slate-700 dark:bg-slate-800">
+        <div class="bg-gray-200 border-gray-300 border-y-2 rounded-t-xl dark:border-slate-700 dark:bg-slate-800">
             <div class="flex flex-col justify-center xl:mx-auto 2xl:max-w-[60%]">
                 <HomeBox title="The place to talk with cool people" image="https://i.ibb.co.com/7rZxtWH/image-2025-01-07-202255283.png" :border="false">
                     In our server, you'll be able to talk basically whatever you want! While our server may be small with less than 1000 members, I am proud to say we are quite the active community. You won't feel being left out in our server 😎
