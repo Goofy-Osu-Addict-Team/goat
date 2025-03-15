@@ -1,6 +1,6 @@
 <script setup>
-import HeaderBar from '@/Components/HeaderBar.vue';
-import FooterBar from '@/Components/FooterBar.vue';
+import HeaderBar from '@/Components/Layouts/HeaderBar.vue';
+import FooterBar from '@/Components/Layouts/FooterBar.vue';
 </script>
 
 <template>
