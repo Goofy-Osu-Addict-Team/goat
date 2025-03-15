@@ -27,6 +27,7 @@ class User extends Authenticatable
         'locale',
         'mfa_enabled',
         'refresh_token',
+        'in_server',
     ];
 
      /**
