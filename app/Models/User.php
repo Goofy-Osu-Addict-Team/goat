@@ -59,4 +59,20 @@ class User extends Authenticatable
             'id' => 'string',
         ];
     }
+
+    /**
+     * Get all permissions of this user
+     */
+    public function getPermissionArray()
+    {
+        return $this->getAllPermissions()->mapWithKeys(fn($pr) => [$pr['name'] => true]);
+    }
+
+    /**
+     * Get all roles of this user
+     */
+    public function getRolesArray()
+    {
+        return $this->getRoleNames()->mapWithKeys(fn($pr) => [$pr => true]);
+    }
 }
